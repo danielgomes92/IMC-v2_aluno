@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <title>IMC</title>
+  </head>
+  <body>
+    <header>
+      <h1>IMC - Índice de Massa Corporal</h1>
+    </header>
+ 
+    <!-- &lt;p&gt; <<--- um dos caracteres especiais para colocar a tag diretamente -->
+
+    <p>
+      <label for="input-weight">Informe o seu peso (kg):&nbsp; </label> <br> <!--&nbsp (non-breaking space)-->
+      <input id="input-weight" type="number" value="78" step="0.1"> <!--step="" serve para incrementar numero nas casas decimas-->
+    </p>
+    
+    <p>
+      <label for="input-height">Informe a sua altura (m): </label> <br>
+    <input id="input-height" type="number" value="1.82" step="0.01">
+    </p>
+
+    <p>
+      <button id="button-calculate-imc">Calcular  IMC</button>
+    </p>
+
+    <p id="paragraph-result">O IMC desses dados é: <strong id="imc-result"></strong></p>
+
+
+      <!-- o defer é tipo booleano sobre o funcionamento do html -->
+    <script defer src="./js/script.js"></script> 
+  </body>
+</html>
