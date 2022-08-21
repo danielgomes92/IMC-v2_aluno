@@ -49,7 +49,7 @@ label {
 
 @media (max-width: 550px) {
   .kilo-altura {
-    width: 350px;
+    width: 380px;
   }
   .kilo-altura input {
     width: 160px;
@@ -66,6 +66,9 @@ label {
     font-size: 12px;
   }
   #paragraph-result {
+    font-size: 13px;
+  }
+  #grau-result {
     font-size: 13px;
   }
 }
