@@ -1,18 +1,71 @@
 body {
+  margin-top: 60px;
   padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: lightgray;
+  background-color: #0bdbf7;
+  user-select: none;
 }
 
-#paragraph-result {
-  margin-top: 50px;
-}
-
-input {
-  margin-top: 5px;
-  width: 200px;
+header {
+  text-align: center;
 }
 
 label {
   font-family: monospace;  /*monospace indica letras do mesmo tamanho e compacto*/
+  font-size: 15px;
+}
+
+.kilo-altura {
+  margin: 0 auto;
+  border: 1px solid black;
+  width: 500px;
+  background-color: #0682ee;
+}
+
+.kilo-altura input {
+  margin-top: 9px;
+  width: 200px;
+  padding: 8px;
+}
+
+#paragraph-result {
+  margin: 20px;
+}
+
+#button-calculate-imc {
+  border-radius: 40px;
+  padding: 15px;
+  font-size: 15px;
+  cursor: pointer;
+}
+#button-calculate-imc:hover{
+  background-color: #0bdbf7;
+  transition: 0.7s;
+}
+
+.kilo-altura p {
+  text-align: center;
+}
+
+@media (max-width: 550px) {
+  .kilo-altura {
+    width: 350px;
+  }
+  .kilo-altura input {
+    width: 160px;
+    padding: 4px;
+  }
+  #button-calculate-imc {
+    padding: 12px;
+    font-size: 12px;
+  }
+  header {
+    font-size: 12px;
+  }
+  label {
+    font-size: 12px;
+  }
+  #paragraph-result {
+    font-size: 13px;
+  }
 }
